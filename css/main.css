@@ -1,0 +1,230 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  background: #ec9f05;
+  background: linear-gradient(152deg, #eca305 17%, #ff4e00 98%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 62.5%;
+}
+
+.box {
+  position: relative;
+  text-align: center;
+  height: 83vh;
+  width: 80vw;
+  background-color: rgba(37, 34, 34, 0.911);
+  border: 2px solid white;
+  border-radius: 15px;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box h1 {
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  color: white;
+}
+
+.box i {
+  color: white;
+}
+
+.box__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 40vh;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.box__content input {
+  background-color: rgba(216, 150, 65, 0.938);
+  border-radius: 0.5rem;
+  height: 30px;
+  width: 190px;
+  font-size: 1.3rem;
+  color: white;
+  border: 2px solid white;
+  padding: 0.3rem;
+  margin: 1.2rem 0 1.2rem 0;
+}
+
+.box button {
+  color: white;
+  margin-top: 2.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  height: 40px;
+  width: 100px;
+  padding: 0.5rem;
+  border: 2px solid white;
+  border-radius: 0.5rem;
+  background-color: #f18e0b;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  cursor: pointer;
+}
+
+.box button:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.box button:active {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.box .result {
+  color: white;
+  font-size: 1.4rem;
+  margin-top: 1.6rem;
+}
+
+@media (min-width: 381px) {
+  .box .result {
+    margin-top: 2.4rem;
+  }
+}
+
+@media (min-width: 477px) {
+  .box h1 {
+    font-size: 2rem;
+  }
+  .box__content {
+    font-size: 1.3rem;
+  }
+  .box .result {
+    margin-top: 1.9rem;
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 575px) {
+  .box {
+    height: 80vh;
+    width: 50vh;
+  }
+  .box h1 {
+    font-size: 2.5rem;
+  }
+  .box__content {
+    font-size: 1.7rem;
+  }
+  .box .result {
+    margin-top: 2.4rem;
+    font-size: 1.7rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .box {
+    height: 80vh;
+    width: 65vh;
+  }
+  .box h1 {
+    font-size: 3rem;
+  }
+  .box__content {
+    font-size: 1.9rem;
+  }
+  .box .result {
+    margin-top: 2.4rem;
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-height: 830px) {
+  .box {
+    height: 90vh;
+    width: 45vh;
+  }
+  .box h1 {
+    font-size: 1.5rem;
+  }
+  .box__content {
+    font-size: 1.2rem;
+  }
+  .box .result {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-height: 600px) {
+  .box {
+    width: 55vh;
+  }
+  .box h1 {
+    font-size: 1rem;
+  }
+  .box__content {
+    font-size: .9rem;
+  }
+  .box .result {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-height: 830px) {
+  h1 {
+    font-size: 1rem;
+  }
+}
+
+@media (min-height: 1200px) {
+  .box {
+    width: 45vh;
+    height: 70vh;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,272 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+body {
+
+    height: 100vh;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background: rgb(236, 159, 5);
+    background: linear-gradient(152deg, rgb(236, 163, 5) 17%, rgba(255, 78, 0, 1) 98%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 62.5%;
+}
+
+
+.box {
+    position: relative;
+    text-align: center;
+    // min-height: 500px;
+    height: 83vh;
+    width: 80vw;
+    background-color: rgba(37, 34, 34, 0.911);
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        margin-bottom: 3rem;
+        font-size: 2rem;
+        color: white;
+    }
+
+    i {
+        color: white;
+    }
+
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 40vh;
+        // background-color: #fff;
+        font-size: 1.5rem;
+        color: white;
+
+        input {
+            background-color: rgba(216, 150, 65, 0.938);
+            border-radius: 0.5rem;
+            height: 30px;
+            width: 190px;
+            font-size: 1.3rem;
+            color: white;
+            border: 2px solid white;
+            padding: 0.3rem;
+            margin: 1.2rem 0 1.2rem 0;
+
+        }
+
+
+
+    }
+
+
+
+    button {
+        color: white;
+        margin-top: 2.5rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        height: 40px;
+        width: 100px;
+        padding: 0.5rem;
+        border: 2px solid white;
+        border-radius: 0.5rem;
+        background-color: rgb(241, 142, 11);
+        transition: transform 0.3s;
+        cursor: pointer;
+    }
+
+    button:hover {
+        transform: scale(1.2);
+
+    }
+
+    button:active {
+        transform: scale(1.2);
+    }
+
+
+    .result {
+        color: white;
+        font-size: 1.4rem;
+        margin-top: 1.6rem;
+    }
+}
+
+
+@media (min-width: 381px) {
+
+    .box {
+
+        .result {
+            margin-top: 2.4rem;
+        }
+
+
+    }
+
+}
+
+
+@media (min-width: 477px) {
+
+    .box {
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        &__content {
+            font-size: 1.3rem;
+
+        }
+
+        .result {
+            margin-top: 1.9rem;
+            font-size: 1.3rem;
+        }
+
+
+    }
+
+}
+
+
+@media (min-width: 575px) {
+
+    .box {
+        height: 80vh;
+        width: 50vh;
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        &__content {
+            font-size: 1.7rem;
+
+        }
+
+        .result {
+            margin-top: 2.4rem;
+            font-size: 1.7rem;
+        }
+
+
+    }
+
+}
+
+
+@media (min-width: 900px) {
+
+    .box {
+        height: 80vh;
+        width: 65vh;
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        &__content {
+            font-size: 1.9rem;
+
+        }
+
+        .result {
+            margin-top: 2.4rem;
+            font-size: 1.9rem;
+        }
+
+
+    }
+
+}
+
+@media (max-height: 830px) {
+
+    .box {
+        height: 90vh;
+        width: 45vh;
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        &__content {
+            font-size: 1.2rem;
+
+        }
+
+        .result {
+            margin-top: 2rem;
+            font-size: 1.2rem;
+        }
+
+
+    }
+
+}
+
+
+@media (max-height: 600px) {
+
+    .box {
+        width: 55vh;
+
+        h1 {
+            font-size: 1rem;
+
+        }
+
+        &__content {
+            font-size: .9rem;
+
+        }
+
+        .result {
+            margin-top: 1rem;
+            font-size: 1rem;
+        }
+
+
+    }
+
+}
+
+
+@media (max-height: 830px) {
+    h1 {
+        font-size: 1rem;
+    }
+}
+
+@media (min-height: 1200px) {
+    .box {
+        width: 45vh;
+        height: 70vh;
+    }
+
+
+}
