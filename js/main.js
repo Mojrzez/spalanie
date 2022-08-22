@@ -18,7 +18,4 @@ function roadCost() {
     } else {
         document.querySelector('.result').innerHTML = `Koszt przejechania ${distance}km wynosi ${finalPrice.toFixed(2)}zł`;
     }
-
-
-
 }
