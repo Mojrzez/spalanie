@@ -20,21 +20,25 @@
 
     <div class="box">
 
-        <h1>Kalkulator Spalania</h1>
 
         <div class="box__content">
+            <h1>Kalkulator Spalania</h1>
             <p>Liczba przejechanych kilometrów</p>
             <input type="number" id="distance">
             <p>Średnie spalanie na 100km</p>
             <input type="number" id="combustion">
             <p>Aktualna cena paliwa</p>
             <input type="number" id="price">
+            <p>Liczba pasażerów</p>
+            <input type="number" id="passanger">
+            <p>Średnia waga pasażera</p>
+            <input type="number" id="weight">
+            <button onclick="roadCost()">Oblicz</button>
+            <div class="result"></div>
         </div>
 
-        <button onclick="roadCost()">Oblicz</button>
 
 
-        <div class="result"></div>
 
 
 
