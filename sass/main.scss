@@ -216,3 +216,29 @@ body {
 
 
 }
+@media (max-height: 700px) {
+    .box {
+        width: 90vw;
+        height: 93vh;
+
+        h1 {
+            font-size: 1rem;
+        }
+
+        &__content {
+            font-size: 0.9rem;
+
+
+            input {
+                height: 20px;
+                font-size: 0.9rem;
+            }
+        }
+
+        .result {
+            font-size: 0.9rem;
+        }
+    }
+
+
+}

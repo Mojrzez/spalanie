@@ -200,4 +200,24 @@ body {
     font-size: 1.7rem;
   }
 }
+
+@media (max-height: 700px) {
+  .box {
+    width: 90vw;
+    height: 93vh;
+  }
+  .box h1 {
+    font-size: 1rem;
+  }
+  .box__content {
+    font-size: 0.9rem;
+  }
+  .box__content input {
+    height: 20px;
+    font-size: 0.9rem;
+  }
+  .box .result {
+    font-size: 0.9rem;
+  }
+}
 /*# sourceMappingURL=main.css.map */
