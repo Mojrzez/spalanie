@@ -1,4 +1,6 @@
-function roadCost() {
+const btn = document.querySelector('#btn');
+
+btn.addEventListener('click', () => {
     let distance = document.querySelector('#distance').value;
     let combustion = document.querySelector('#combustion').value;
     let price = document.querySelector('#price').value;
@@ -16,6 +18,6 @@ function roadCost() {
     if (distance == "" || combustion == "" || price == "" || passenger == "" || weight == "") {
         document.querySelector('.result').innerHTML = `Wprowadź wartości`;
     } else {
-        document.querySelector('.result').innerHTML = `Koszt przejechania ${distance}km wynosi ${finalPrice.toFixed(2)}zł`;
+        document.querySelector('.result').innerHTML = `Koszt przejechania <span class="painter">${distance}km</span> wynosi <span class="painter">${finalPrice.toFixed(2)}zł</span>`;
     }
-}
+})
