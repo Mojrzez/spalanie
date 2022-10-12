@@ -17,14 +17,6 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-.white {
-  background-color: #bebebe;
-}
-
-.black {
-  color: black;
-}
-
 body {
   font-family: "Convergence", sans-serif;
   font-size: 62.5%;
@@ -35,7 +27,7 @@ h1 {
   padding: 10px;
   text-align: center;
   color: #bb7330;
-  font-size: 1.3rem;
+  font-size: 2.2rem;
   margin-bottom: 2rem;
 }
 
@@ -59,8 +51,8 @@ h1 span {
 
 .form {
   position: relative;
-  width: 13rem;
-  height: 2rem;
+  width: 15rem;
+  height: 3.4rem;
   margin: 1.8rem 0rem;
 }
 
@@ -78,7 +70,7 @@ h1 span {
   background: none;
   -webkit-transition: .3s;
   transition: .3s;
-  font-size: .8rem;
+  font-size: 1.2rem;
 }
 
 .form__input:focus {
@@ -92,13 +84,11 @@ h1 span {
 .form__label {
   position: absolute;
   left: 1rem;
-  top: -.23rem;
+  top: -.50rem;
   padding: 0 0.5rem;
-  font-size: .6rem;
+  font-size: 1rem;
   color: #bb7330;
   cursor: text;
-  -webkit-transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
-  transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
   background-color: #121016;
   -webkit-transition: .3s;
   transition: .3s;
@@ -112,6 +102,7 @@ h1 span {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   color: white;
+  font-size: 1.2rem;
 }
 
 .painter {
@@ -122,10 +113,11 @@ h1 span {
   color: white;
   margin-bottom: 2rem;
   margin-top: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 button {
-  text-transform: uppercase;
   background: transparent;
   color: white;
   border: 2px solid #bb7330;
@@ -134,7 +126,7 @@ button {
   cursor: pointer;
   -webkit-transition: .3s;
   transition: .3s;
-  font-size: .6rem;
+  font-size: 1.2rem;
 }
 
 button:hover {
@@ -142,99 +134,106 @@ button:hover {
           transform: scale(1.1);
 }
 
-@media (min-width: 400px) {
+@media (min-width: 450px) {
   h1 {
-    font-size: 1.6rem;
+    font-size: 2.7rem;
   }
   .form {
-    width: 15rem;
-    height: 2.2rem;
+    width: 20rem;
+    height: 3.9rem;
     margin: 2rem 0rem;
   }
   .form__input {
-    padding: 1.2rem;
-    font-size: 1rem;
+    padding: 1.8rem 1.2rem;
+    font-size: 1.6rem;
   }
   .form__label {
-    font-size: .7rem;
+    font-size: 1.2rem;
+    top: -.70rem;
   }
   .form__label--number {
-    font-size: .9rem;
+    font-size: 1.6rem;
     right: 1rem;
-    top: 60%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-  }
-  .result {
-    font-size: 1rem;
-    margin-top: 2rem;
-  }
-  button {
-    font-size: .8rem;
-  }
-}
-
-@media (min-width: 600px) {
-  h1 {
-    font-size: 1.8rem;
-  }
-  .form {
-    width: 16rem;
-    height: 2.5rem;
-  }
-  .form__input {
-    padding: 1.3rem;
-    font-size: 1.2rem;
-  }
-  .form__label {
-    font-size: .9rem;
-    top: -.45rem;
-  }
-  .form__label--number {
-    font-size: 1.1rem;
-    right: 1rem;
-    top: 57%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-  }
-  .result {
-    font-size: 1.2rem;
-    margin-top: 2rem;
-  }
-  button {
-    font-size: 1rem;
-  }
-}
-
-@media (min-width: 900px) {
-  h1 {
-    font-size: 2.4rem;
-  }
-  .form {
-    width: 18rem;
-    height: 2.5rem;
-  }
-  .form__input {
-    padding: 1.4rem;
-    font-size: 1.4rem;
-  }
-  .form__label {
-    font-size: 1.1rem;
-    top: -.65rem;
-  }
-  .form__label--number {
-    font-size: 1.2rem;
-    right: 1rem;
-    top: 57%;
+    top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
   .result {
     font-size: 1.5rem;
     margin-top: 2rem;
+    padding: 15px;
   }
   button {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 762px) {
+  h1 {
+    font-size: 3.4rem;
+  }
+  .form {
+    width: 24rem;
+    height: 4.5rem;
+    margin: 2.5rem 0rem;
+  }
+  .form__input {
+    padding: 2.2rem 1.5rem;
+    font-size: 2rem;
+  }
+  .form__label {
+    font-size: 1.6rem;
+    top: -1rem;
+  }
+  .form__label--number {
+    font-size: 2rem;
+    right: 1rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .result {
+    font-size: 2rem;
+    margin-top: 2rem;
+    padding: 15px;
+  }
+  button {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 4rem;
+  }
+  .form {
+    width: 29rem;
+    height: 5.5rem;
+    margin: 3rem 0rem;
+  }
+  .form__input {
+    padding: 2.2rem 1.5rem;
+    font-size: 2.4rem;
+  }
+  .form__label {
+    font-size: 2rem;
+    top: -1.4rem;
+  }
+  .form__label--number {
+    font-size: 2.4rem;
+    right: 1.4rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .result {
+    font-size: 2.4rem;
+    margin-top: 2.4rem;
+    padding: 15px;
+  }
+  button {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
