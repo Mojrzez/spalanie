@@ -204,35 +204,35 @@ button:hover {
 
 @media (min-width: 992px) {
   h1 {
-    font-size: 4rem;
+    font-size: 3.8rem;
   }
   .form {
-    width: 29rem;
-    height: 5.5rem;
+    width: 28rem;
+    height: 5.3rem;
     margin: 3rem 0rem;
   }
   .form__input {
-    padding: 2.2rem 1.5rem;
-    font-size: 2.4rem;
+    padding: 1.7rem 1.4rem;
+    font-size: 2.2rem;
   }
   .form__label {
-    font-size: 2rem;
-    top: -1.4rem;
+    font-size: 1.8rem;
+    top: -1.2rem;
   }
   .form__label--number {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     right: 1.4rem;
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
   .result {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     margin-top: 2.4rem;
     padding: 15px;
   }
   button {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     margin-bottom: 2rem;
   }
 }
